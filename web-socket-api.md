@@ -25,14 +25,14 @@ Connect to the klines feed to receive klines (i.e. candlesticks) every second.
 
 **Valid kline intervals:**
 
-* `1m` -- one minute
-* `5m` -- five minutes
-* `15m` -- fifteen minutes
-* `1h` -- one hour
-* `4h` -- four hours
-* `12h` -- twelve hours
-* `1d` -- one day
-* `1w` -- one week
+* `1m` (one minute)
+* `5m` (five minutes)
+* `15m` (fifteen minutes)
+* `1h` (one hour)
+* `4h` (four hours)
+* `12h` (twelve hours)
+* `1d` (one day)
+* `1w` (one week)
 
 **Feed name:** TODO (in flux)
 
