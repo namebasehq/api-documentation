@@ -1,4 +1,4 @@
-# Auth for namebase API
+# Auth for the Namebase API
 
 To obtain an API key, visit the settings page on https://namebase.io/pro and follow the instructions in the user interface.
 
