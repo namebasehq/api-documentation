@@ -3,7 +3,7 @@
 ## Trades
 The Trades feed sends trade information with the buyer and seller ids scrubbed out.
 
-**Feed name:** TODO (in flux)
+**Feed name:** '/ws/v0/ticker/trades' (in flux)
 
 **Payload:**
 ```javascript
@@ -34,7 +34,7 @@ Connect to the klines feed to receive klines (i.e. candlesticks) every second.
 * `1d` (one day)
 * `1w` (one week)
 
-**Feed name:** TODO (in flux)
+**Feed name:** '/ws/v0/ticker/kline_<interval, e.g. "1m">'
 
 **Payload:**
 ```javascript
@@ -61,9 +61,9 @@ Connect to the klines feed to receive klines (i.e. candlesticks) every second.
 ```
 
 ## Price ticker
-This feed provides statistics for the last 24 hours of trading activity for a given symbol, every second. Importantly, these statistics are taken over a _rolling_ window and not over a calendar day. Thus, a request sent on `2019/05/05 16:01:33` will return statistics for trades that occurred between `2019/05/04 16:01:34` and `2019/05/05 16:01:33`. The seconds are inclusive on both ends.
+This feed provides statistics for the last 24 hours of trading activity for a HNSBTC, every second. Importantly, these statistics are taken over a _rolling_ window and not over a calendar day. Thus, a request sent on `2019/05/05 16:01:33` will return statistics for trades that occurred between `2019/05/04 16:01:34` and `2019/05/05 16:01:33`. The seconds are inclusive on both ends.
 
-**Feed name:**  TODO (in flux)
+**Feed name:**  '/ws/v0/ticker/day'
 
 **Payload:**
 ```javascript
@@ -95,7 +95,7 @@ This feed provides statistics for the last 24 hours of trading activity for a gi
 ## Depth updates
 This feed allows you to mirror the Namebase order book on your computer. It sends price and quantity updates every second.
 
-**Feed name:** TODO (in flux)
+**Feed name:** '/ws/v0/ticker/depth'
 
 **Payload:**
 ```javascript
