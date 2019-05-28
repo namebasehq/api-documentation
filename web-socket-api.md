@@ -54,8 +54,6 @@ Connect to the klines feed to receive klines (i.e. candlesticks) every second.
     "volume": "10.001301",        // Total base asset traded in interval
     "quoteVolume": "0.000224824", // Total quote asset traded in interval
     "numberOfTrades": 42,         // Number of trades
-    "firstTradeId": 13001,        // First trade id
-    "lastTradeId": 13042,         // Last trade id
   }
 }
 ```
