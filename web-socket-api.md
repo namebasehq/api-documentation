@@ -1,8 +1,10 @@
 # Web Socket Data Feeds for Namebase
 
 The host for the streams is wss://namebase.io:443/
-The /ticker feeds send data every second. 
-The /stream feeds send data on each event as soon as it happens, e.g. on each trade.
+
+The `/ticker` feeds send data every second. 
+
+The `/stream` feeds send data on each event as soon as it happens, e.g. on each trade.
 
 ## Trade stream
 The Trades feed sends trade information with the buyer and seller ids scrubbed out.
