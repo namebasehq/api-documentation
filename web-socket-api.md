@@ -93,7 +93,7 @@ This feed provides statistics for the last 24 hours of trading activity for a HN
 ```
 
 ## Depth updates
-This feed allows you to mirror the Namebase order book on your computer. It sends price and quantity updates every second.
+This feed allows you to mirror the Namebase order book on your computer. It sends price and quantity updates every second. Note: this API provides no guarantees on the order the price levels appear in. Do not assume that bids and asks are sorted in decreasing order by price.
 
 **Feed name:** '/ws/v0/ticker/depth'
 
@@ -105,11 +105,11 @@ This feed allows you to mirror the Namebase order book on your computer. It send
   "symbol": "HNSBTC",           // Symbol
   "firstEventId": 256,          // First event id
   "lastEventId": 258,           // Last event id
-  "bids": [
-    ["0.00002079", "10.130000"] // [Price level to change, New quantity]
-  ],
   "asks": [
     ["0.00002091", "32.901102"] // [Price level to change, New quantity]
+  ],
+  "bids": [
+    ["0.00002079", "10.130000"] // [Price level to change, New quantity]
   ]
 }
 ```
