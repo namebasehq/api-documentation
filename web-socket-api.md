@@ -1,6 +1,10 @@
 # Web Socket Data Feeds for Namebase
 
-## Trades
+The host for the streams is wss://namebase.io:443/
+The /ticker feeds send data every second. 
+The /stream feeds send data on each event as soon as it happens, e.g. on each trade.
+
+## Trade stream
 The Trades feed sends trade information with the buyer and seller ids scrubbed out.
 
 **Feed name:** '/ws/v0/ticker/trades' (in flux)
@@ -20,7 +24,7 @@ The Trades feed sends trade information with the buyer and seller ids scrubbed o
 }
 ```
 
-## Klines
+## Klines ticker
 Connect to the klines feed to receive klines (i.e. candlesticks) every second.
 
 **Valid kline intervals:**
@@ -92,7 +96,7 @@ This feed provides statistics for the last 24 hours of trading activity for a HN
 }
 ```
 
-## Depth updates
+## Depth ticker
 This feed allows you to mirror the Namebase order book on your computer. It sends price and quantity updates every second. Note: this API provides no guarantees on the order the price levels appear in. Do not assume that bids and asks are sorted in decreasing order by price.
 
 **Feed name:** '/ws/v0/ticker/depth'
