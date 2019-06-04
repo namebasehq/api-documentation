@@ -48,6 +48,12 @@ Errors consist of two parts: an error code and a message. Codes are universal,
 #### NOT_ALLOWED_TO_TRADE
 * Your account is not currently allowed to trade. Complete KYC verification or contact support.
 
+#### NOT_ALLOWED_TO_DEPOSIT
+* Unfortunately, based on your verification status, you cannot deposit ${asset}.
+
+#### NOT_ALLOWED_TO_WITHDRAW
+* Unfortunately, based on your verification status, you cannot withdraw ${asset}.
+
 #### INSUFFICIENT_BALANCE
 * You do not have sufficient balance to perform this action.
 
