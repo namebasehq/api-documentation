@@ -32,15 +32,22 @@ The rate limits are set generously and are not meant to prohibit any amount of n
 * Similarly, volumes are in the units of the base asset, and quote volumes are in the units of the quote asset
 
 ## ENUM definitions
-### Order status
-* `NEW`
-* `PARTIALLY_FILLED`
-* `FILLED`
-* `CANCELED`
-
 ### Order types
 * `LMT` (limit)
 * `MKT` (market)
+
+### Order status
+* `NEW` (on the book, no trades yet)
+* `PARTIALLY_FILLED` (on the book, some trades have occurred)
+* `FILLED` (automatically taken off the book, order fully satisfied)
+* `CLOSED` (automatically taken off the book, order partially satisfied)
+* `CANCELED` (the trader took the order off the book, order partially satisfied)
+
+When a limit buy order is placed, due to complexities with rounding numbers, it may be the case that your order lacks sufficient quote to be fully satisfied. In this scenario, your order will automatically be removed from the book (the `CLOSED` state) and you will be refunded the dusty quote amount that remained. In the case of BTC, this dust amount is often just a few satoshis. This is rare and requires no action on your part.
+
+When a market order is placed, there may be insufficient liquidity to fully satisfy the order. Alternatively, there may be price slippage and your account may lack sufficient funds to fully satisfy the order. In either case, the order is automtically removed from the book and placed in the `CLOSED` state.
+
+Lastly, if you place two orders on opposite sites and accidentally trade with yourself, then your more recent order, the taker order, will be automatically removed from the book and placed in the `CLOSED` state. Your older, original order will remain on the book. For your own protection (to save you trading fees), Namebase's matching engine will not match two orders from the same user.
 
 ### Order side
 * `BUY`
