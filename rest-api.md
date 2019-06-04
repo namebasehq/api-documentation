@@ -431,7 +431,7 @@ timestamp | LONG | YES |
 ```
 GET /api/v0/account
 ```
-Get current account information.
+Get basic account information.
 
 **Parameters:**
 
@@ -460,6 +460,41 @@ timestamp | LONG | YES |
       "lockedInOrders": "1.000000",
       "canDeposit": true,
       "canWithdraw": true
+    }
+  ]
+}
+```
+
+### Account withdrawal limits
+```
+GET /api/v0/account/limits
+```
+Retrieve your account's withdrawal limits for all assets. Withdrawal limits are applied on a 24-hour rolling basis, and the start and end time of this period are specified by `startTime` and `endTime`.
+
+The `totalWithdrawn` key specifies how much of an asset you have withdrawn in the last 24 hours, and the `withdrawalLimit` key specifies the maximum amount you are permitted to withdraw in the specified period.
+
+**Parameters:**
+
+Name | Type | Mandatory | Description
+-----|------|-----------|------------
+receiveWindow | LONG | NO |
+timestamp | LONG | YES |
+
+**Response:**
+```javascript
+{
+  "startTime": 1555467560001,
+  "endTime": 1555553960000,
+  "withdrawalLimits": [
+    {
+      "asset": "HNS",
+      "totalWithdrawn": "500.000000",
+      "withdrawalLimit": "10000.000000",
+    },
+    {
+      "asset": "BTC",
+      "totalWithdrawn": "0.50000000",
+      "withdrawalLimit": "5.00000000",
     }
   ]
 }
