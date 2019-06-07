@@ -371,7 +371,7 @@ timestamp | LONG | YES |
 ```
 GET /api/v0/order/open
 ```
-Get all open orders on a symbol. **Careful** when accessing this with no symbol.
+Get the most recent open orders on a symbol (limited to 500).
 
 **Parameters:**
 
