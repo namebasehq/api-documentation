@@ -9,7 +9,7 @@ The `/stream` feeds send data on each event as soon as it happens, e.g. on each 
 ## Trade stream
 The Trades feed sends trade information with the buyer and seller ids scrubbed out.
 
-**Feed name:** '/ws/v0/ticker/trades' (in flux)
+**Feed name:** '/ws/v0/stream/trades'
 
 **Payload:**
 ```javascript
