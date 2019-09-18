@@ -259,6 +259,29 @@ symbol | STRING | YES |
 }
 ```
 
+### Circulating supply ticker
+```
+GET /api/v0/ticker/supply
+```
+Returns the circulating supply for the provided asset.
+
+Currently, only HNS is supported, and it incorporates 1) mined coins, 2) claimed coins from the developer airdrop, 3) coins granted to project sponsors, and 4) burned coins removed from circulation due to name auctions.
+
+**Parameters:**
+
+Name | Type | Mandatory | Description
+-----|------|-----------|------------
+asset | STRING | YES |
+
+**Response:**
+```javascript
+{
+  "height": 22012,
+  "circulatingSupply": "116082412.354562",
+
+}
+```
+
 ## Account endpoints
 ### New order
 ```
