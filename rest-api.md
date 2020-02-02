@@ -1,5 +1,6 @@
 # Public Rest API for Namebase
 ## General API Information
+* The root API URL is https://www.namebase.io
 * Parameters for GET requests must be sent as a `query string`.
 * All other request methods require parameters in the request body as `Content-Type: application/json`
 * Parameter order does not matter.

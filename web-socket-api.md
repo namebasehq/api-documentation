@@ -1,6 +1,8 @@
 # Web Socket Data Feeds for Namebase
 
-The host for the streams is wss://namebase.io:443/
+The host for the streams is wss://app.namebase.io:443/
+
+Note: this root URL is different than the root URL for the REST endpoints.
 
 The `/ticker` feeds send data every second. 
 
