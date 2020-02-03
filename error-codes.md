@@ -19,6 +19,10 @@ Errors consist of two parts: an error code and a message. Codes are universal,
 * This request was received after the specified receive window.
 
 ## Request issues; fixed by changing a parameter
+
+#### REQUEST_UNAUTHENCIATED
+* This request is not properly authenticated. Log in or use an API key.
+
 #### REQUEST_PARSE_ERROR
 * An unknown error occured while parsing your request parameters.
 
@@ -43,6 +47,11 @@ Errors consist of two parts: an error code and a message. Codes are universal,
 #### REQUEST_MINIMUM_WITHDRAWAL
 * The minimum withdrawal for ${asset} is ${amount}.
 
+#### REQUEST_MINIMUM_DEPOSIT
+* The minimum deposit for ${asset} is ${amount}.
+
+#### REQUEST_MINIMUM_ORDER
+* The minimum order size for ${symbol} is ${amount} ${asset}.
 
 ## Stateful errors; hard or impossible for user to fix
 #### NOT_ALLOWED_TO_TRADE
