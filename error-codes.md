@@ -66,6 +66,9 @@ Errors consist of two parts: an error code and a message. Codes are universal,
 #### WITHDRAWAL_LIMIT_REACHED
 * You've reached your withdrawal limit for ${asset}. Try withdrawing less funds or try again later.
 
+#### WITHDRAWALS_DISABLED
+* ${asset} withdrawals are disabled until block height ${height}.
+
 #### INSUFFICIENT_BALANCE
 * You do not have sufficient balance to perform this action.
 
