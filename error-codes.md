@@ -63,6 +63,9 @@ Errors consist of two parts: an error code and a message. Codes are universal,
 #### NOT_ALLOWED_TO_WITHDRAW
 * Unfortunately, based on your verification status, you cannot withdraw ${asset}.
 
+#### WITHDRAWAL_ADDRESS_INVALID
+* The withdrawal address you've entered is not a valid ${asset} address.
+
 #### WITHDRAWAL_LIMIT_REACHED
 * You've reached your withdrawal limit for ${asset}. Try withdrawing less funds or try again later.
 
