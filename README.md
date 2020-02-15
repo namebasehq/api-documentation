@@ -19,5 +19,5 @@ The documents below are the official authority on the Namebase Exchange API. Som
 Language | Link | Author
 ------------ | ------------ | ---
 Node.js | [namebasehq/exchange-api](https://github.com/namebasehq/exchange-api) | Namebase
-Python | N/A | You? :o
+Python | [wy/namebase-exchange-python](https://github.com/wy/namebase-exchange-python) | ~wy
 Go | N/A | You? :o
