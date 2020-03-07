@@ -18,6 +18,9 @@ Errors consist of two parts: an error code and a message. Codes are universal,
 #### SERVER_LATE_TIMESTAMP
 * This request was received after the specified receive window.
 
+#### SERVER_MAINTENANCE
+* The server is currently undergoing scheduled maintenance. Try again.
+
 ## Request issues; fixed by changing a parameter
 
 #### REQUEST_UNAUTHENCIATED
