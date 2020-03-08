@@ -273,6 +273,7 @@ Currently, only HNS is supported, and it incorporates 1) mined coins, 2) claimed
 Name | Type | Mandatory | Description
 -----|------|-----------|------------
 asset | STRING | YES |
+supplyOnly | BOOLEAN | NO | If true, only the number will be returned (with no object labels)
 
 **Response:**
 ```javascript
