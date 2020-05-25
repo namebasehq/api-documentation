@@ -1,4 +1,4 @@
-Namebase Exchange Public API Documentation
+Namebase Public API Documentation
 ==
 The documents below are the official authority on the Namebase Exchange API. Some notes:
 
@@ -10,9 +10,10 @@ The documents below are the official authority on the Namebase Exchange API. Som
 ## Documents
 
 1. [API key authentication instructions](./auth.md)
-2. [Comprehensive list of the REST API endpoints](./rest-api.md)
-3. [Comprehensive list of error codes and messages](./error-codes.md)
-4. [Web socket data feed information](./web-socket-api.md)
+2. [Comprehensive list of the Exchange REST API endpoints](./rest-api.md)
+3. [Comprehensive list of the Marketplace REST API endpoints](./marketplace-api.md)
+4. [Comprehensive list of error codes and messages](./error-codes.md)
+5. [Web socket data feed information](./web-socket-api.md)
 
 ## Client libraries
 
