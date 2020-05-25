@@ -34,7 +34,7 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
 | Name            | Type   | Mandatory | Description                                                       |
 |-----------------|--------|-----------|--------------------------------------------------|
 | `sortKey`       | ENUM   | YES       | Valid sortKeys: [`date`, `bid`, `price`, `name`] |
-| `sortDirection` | ENUM   | YE        | Valid sortDirections: [`desc, `asc`]             |
+| `sortDirection` | ENUM   | YES       | Valid sortDirections: [`desc, `asc`]             |
 
 #### Response:
 ```
@@ -60,8 +60,8 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
 #### Parameters:
 | Name            | Type   | Mandatory | Description                                                |
 |-----------------|--------|-----------|------------------------------------------------------------|
-| `sortKey`       | ENUM   | YES        | Default: `date`, Valid sortKeys: [`date`, `price`, `name`] |
-| `sortDirection` | ENUM   | YES        | Default: `desc`, Valid sortDirections: [`desc, `asc`]      |
+| `sortKey`       | ENUM   | YES       | Default: `date`, Valid sortKeys: [`date`, `price`, `name`] |
+| `sortDirection` | ENUM   | YES       | Default: `desc`, Valid sortDirections: [`desc, `asc`]      |
 
 #### Response:
 ```
@@ -108,7 +108,7 @@ POST /api/v0/marketplace/:domain/list
 | Name          | Type   | Mandatory | Description                           |
 |---------------|--------|-----------|---------------------------------------|
 | `amount`      | STRING | YES       |                                       |
-| `asset`       | ENUM   | YES       | Valid assets: [`HNS`]                 |
+| `asset`       | STRING | YES       | Valid assets: [`HNS`]                 |
 | `description` | STRING | YES       | 10,000 character max                  |
 
 #### Response:
