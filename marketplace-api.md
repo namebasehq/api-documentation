@@ -26,15 +26,15 @@ The rate limits are set generously and are not meant to prohibit any amount of n
 
 ### Marketplace Listings
 ```
-GET /api/domain/marketplace/:offset
+GET /api/domains/marketplace/:offset
 ```
 Returns 100 sorted names, paginated by an `offset` parameter. For example, `offset=0` will get the first 100 listings and `offset=100` will return listings 101-200.
 
 #### Parameters:
 | Name            | Type   | Mandatory | Description                                                       |
 |-----------------|--------|-----------|--------------------------------------------------|
-| `sortKey`       | ENUM   | YES       | Valid sortKeys: [`date`, `bid`, `price`, `name`] |
-| `sortDirection` | ENUM   | YES       | Valid sortDirections: [`desc, `asc`]             |
+| `sortKey`       | ENUM   | YES       | Valid sortKeys: [`bid`, `price`, `name`] |
+| `sortDirection` | ENUM   | YES       | Valid sortDirections: [`desc`, `asc`]             |
 
 #### Response:
 ```
