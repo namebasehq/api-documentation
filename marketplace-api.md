@@ -33,8 +33,12 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
 #### Parameters:
 | Name            | Type   | Mandatory | Description                                                       |
 |-----------------|--------|-----------|--------------------------------------------------|
-| `sortKey`       | ENUM   | YES       | Valid sortKeys: [`bid`, `price`, `name`] |
-| `sortDirection` | ENUM   | YES       | Valid sortDirections: [`desc`, `asc`]             |
+| `sortKey`       | ENUM   | NO        | Default: `bid`; Valid sortKeys: [`bid`, `price`, `name`, 'date'] |
+| `sortDirection` | ENUM   | NO        | Default: `asc`; Valid sortDirections: [`desc`, `asc`]             |
+| `firstCharacter`| STRING | NO        | Use `#` to select for all names starting with a number |
+| `maxPrice`      | STRING | NO        | Small HNS units |
+| `maxLength`     | STRING | NO        | |
+| `onlyPuny`      | BOOLEAN | NO       | Default: `false` |
 
 #### Response:
 ```
@@ -60,8 +64,8 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
 #### Parameters:
 | Name            | Type   | Mandatory | Description                                                |
 |-----------------|--------|-----------|------------------------------------------------------------|
-| `sortKey`       | ENUM   | YES       | Default: `date`, Valid sortKeys: [`date`, `price`, `name`] |
-| `sortDirection` | ENUM   | YES       | Default: `desc`, Valid sortDirections: [`desc, `asc`]      |
+| `sortKey`       | ENUM   | NO        | Default: `date`, Valid inputs: [`date`, `price`, `name`] |
+| `sortDirection` | ENUM   | NO        | Default: `desc`, Valid inputs: [`desc, `asc`]      |
 
 #### Response:
 ```
@@ -108,8 +112,8 @@ POST /api/v0/marketplace/:domain/list
 | Name          | Type   | Mandatory | Description                           |
 |---------------|--------|-----------|---------------------------------------|
 | `amount`      | STRING | YES       |                                       |
-| `asset`       | STRING | YES       | Valid assets: [`HNS`]                 |
-| `description` | STRING | YES       | 10,000 character max                  |
+| `asset`       | STRING | YES       | Valid inputs: [`HNS`]                 |
+| `description` | STRING | NO        | Default: ''; 10,000 character max                  |
 
 #### Response:
 ```
