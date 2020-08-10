@@ -1,6 +1,6 @@
 # Auth for the Namebase API
 
-To obtain an API key, visit the settings page on https://www.namebase.io/pro and follow the instructions in the user interface.
+To obtain an API key, visit the keys page on https://www.namebase.io/pro/keys and follow the instructions in the user interface.
 
 **Be careful with your API keys: they grant unrestricted access to your exchange account.**
 
