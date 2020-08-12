@@ -50,7 +50,7 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
       "amount": string,
       "name": string,
       "description": string,
-      "watching": string
+      "watching": boolean | null
     },
   ],
 }
@@ -78,7 +78,7 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
       "name": string,
       "amount": string,
       "asset": string,
-      "watching": string,
+      "watching": boolean | null,
       "created_at": datetime
     },
   ],
