@@ -44,12 +44,13 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
 ```
 {
   "success": boolean,
-  "listings": [
+  "domains": [
     {
       "id": string,
       "amount": string,
-      "asset": string,
+      "name": string,
       "description": string,
+      "watching": string
     },
   ],
 }
@@ -71,13 +72,14 @@ Returns 100 sorted names, paginated by an `offset` parameter. For example, `offs
 ```
 {
   "success": boolean,
-  "listings": [
+  "domains": [
     {
       "id": string,
-      "domain": string,
+      "name": string,
       "amount": string,
       "asset": string,
-      "created_at": datetime,
+      "watching": string,
+      "created_at": datetime
     },
   ],
 }
