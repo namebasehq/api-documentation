@@ -23,3 +23,4 @@ Language | Link | Author
 Node.js | [namebasehq/exchange-api](https://github.com/namebasehq/exchange-api) | Namebase
 Python | [wy/namebase-exchange-python](https://github.com/wy/namebase-exchange-python) | ~wy
 Go | [sniperem/namebase](https://github.com/sniperem/namebase) | sniperem
+Python | [pretended/namebase-marketplace](https://github.com/pretended/namebase-marketplace) | pretended
